@@ -18,6 +18,8 @@ from django.urls import path
 from mainApp import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+import mainApp
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +30,8 @@ urlpatterns = [
     path('tutelas/', views.tutelas),
     path('', views.index),
     path('asesor/', views.asesor),
+    path('guardar_funci/', views.guardar_funci, name='guardar_funci'),
+    path('guardar_area/', views.guardar_area, name='guardar_area'),
 
     
 ]

@@ -57,7 +57,7 @@ class Funcionario(models.Model):
 class Prestamo_hv (models.Model):
     id_ppl = models.ForeignKey(PPL,on_delete=models.CASCADE)
     id_funcionario = models.ForeignKey(Funcionario,on_delete=models.CASCADE)
-    descripcion = models.CharField(max_length=200)
+    descripcion = models.CharField(max_length=200,null=True,blank=True)
     fecha_prestamo = models.DateField()
     fecha_devolucion = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
@@ -68,9 +68,9 @@ class Prestamo_hv (models.Model):
 class PPLxTramites(models.Model):
     id_ppl = models.ForeignKey(PPL,on_delete=models.CASCADE)
     id_funcionario = models.ForeignKey(Funcionario,on_delete=models.CASCADE)
-    id_tipotramite = models.ForeignKey(Tipo_tramite,on_delete=models.CASCADE)
+    id_tipotramite = models.ForeignKey(Tipo_tramite,on_delete=models.CASCADE,)
     id_estadotramite = models.ForeignKey(Estado_tramites,on_delete=models.CASCADE)
-    fecha_peticion = models.DateField()
+    fecha_peticion = models.DateField(null=True,blank=True)
     fase_72h = models.CharField(max_length=100,null=True,blank=True)
     visitadomi_72h = models.CharField(max_length=100,null=True,blank=True)
     antecedentes_72h = models.CharField(max_length=100,null=True,blank=True)
@@ -80,7 +80,7 @@ class PPLxTramites(models.Model):
     oficio_envio_tutela = models.CharField(max_length=100,null=True,blank=True)
     observa_desa_tutela = models.CharField(max_length=200,null=True,blank=True)
     observaciones = models.CharField(max_length=200,null=True,blank=True)
-    fecha_envio_tramite= models.DateField()
+    fecha_envio_tramite= models.DateField(null=True,blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 

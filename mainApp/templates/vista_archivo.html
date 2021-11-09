@@ -1,0 +1,597 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Archivo - INPEC</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="{% static 'assets/img/navbar-logo.svg' %}" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Tramites</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Bienvenido </div>
+                <div class="masthead-heading text-uppercase">Archivo</div>
+                
+            </div>
+        </header>
+        
+         <!-- Contact-->
+        
+        <!-- Services-->
+        
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Funciones</h2>
+                    <h3 class="section-subheading text-muted">Doble click sobre la imgen de la función que desea realizar</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/PPL.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Registrar PPL</div>
+                                <div class="portfolio-caption-subheading text-muted">Nuevo registro de PPL en la base de datos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/22.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Actualizar PPL</div>
+                                <div class="portfolio-caption-subheading text-muted">Actualización sobre la información de un PPL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/33.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Historico PPL</div>
+                                <div class="portfolio-caption-subheading text-muted">Visualización bitacora de regitro y modificación de un PPL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/12.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Prestamo de HV</div>
+                                <div class="portfolio-caption-subheading text-muted">Prestamo de la hoja de vida de un PPL a la dependencia que lo requiera</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/22.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Actualizar Prestamo HV</div>
+                                <div class="portfolio-caption-subheading text-muted">Actualización sobre el prestamo de una hoja de vida de un PPL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/5.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Historico Prestamo HV</div>
+                                <div class="portfolio-caption-subheading text-muted">Visualización bitacora del prestamo de una hoja de vida de un PPL a una dependencia</div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Registrar PPL</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!-- NUI input-->
+                                <input class="form-control" id="nui" type="text" placeholder="NUI*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="nui:required">NUI es requerido.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <!-- NTD input-->
+                                <input class="form-control" id="ntd" type="text" placeholder="NTD*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="ntd:required">NTD es requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- DOCUMENTO input-->
+                                <input class="form-control" id="documentoppl" type="text" placeholder="DOCUMENTO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="document:required">DOCUMENTO es requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- SITUACIÓN JURIDICA input-->
+                                <input class="form-control" id="situ_juridica" type="text" placeholder="SITUACION JURIDICA*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="situation:required">SITUACIÓN JURIDICA es requerido.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!-- NOMBRE input-->
+                                <input class="form-control" id="nombreppl" type="text" placeholder="NOMBRE*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">NOMBRE es requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- APELLIDO input-->
+                                <input class="form-control" id="aquellidoppl" type="text" placeholder="APELLIDO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="lastname:required">APELLIDO es requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- GENERO JURIDICA input-->
+                                <input class="form-control" id="generoppl" type="text" placeholder="GENERO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="sex:required">GENERO es requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- UBICACIÓN input-->
+                                <input class="form-control" id="ubicacionppl" type="text" placeholder="UBICACION*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="ubicacition:required">UBICACION es requerido.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!-- FECHA NACIMIENTO input-->
+                                <label>Fecha de nacimineto:</label>
+                                <input class="form-control" id="fecha_nacippl" type="date" placeholder="FECHA NACIMIENTO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="date:required">FECHA DE NACIMIENTO es requerido.</div>
+                            </div>
+                            <label>Fecha de captura:</label>
+                            <div class="form-group">
+                                <!-- FECHA CAPTURA input-->
+                                <input class="form-control" id="fecha_capppl" type="date" placeholder="FECHA CAPTURA*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="date:required">FECHA DE CAPTURA es requerido.</div>
+                            </div>
+                                    <div class="form-group">
+                                        <!-- DELITO input-->
+                                        <input class="form-control" id="delito" type="text" placeholder="DELITO *" data-sb-validations="required" />
+                                        <div class="invalid-feedback" data-sb-feedback="Delit:required">DELITO es requerido.</div>
+                                    </div>
+                                
+                        </div>
+
+                        <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                       Guardar
+                        </button>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                    
+                   <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-dark table-hover">
+                                <thead class="">
+                                    <tr class="text">
+                                        <th>ID</th>
+                                        <th>NUI</th>
+                                        <th>NTD</th>   
+                                        <th>NOMBRE</th>
+                                        <th>APELLIDO</th>
+                                        <th>DOCUMENTO</th>
+                                        <th>FECHA NACIMIENTO</th>
+                                        <th>GENERO</th>
+                                        <th>FECHA CAPTURA</th>
+                                        <th>DELITO</th>
+                                        <th>SITUACIÓN JURIDICA</th>
+                                        <th>UBICACION</th>
+                                        <th>ACCIONES</th>
+                                 </tr>
+                                </thead>
+                            <tbody>
+                            
+                                <c:forEach var="prov" items="">
+                                    <tr class="text-center">
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td class="d-flex">
+                                            <a  class="btn btn-warning" href="">Editar</a>
+                                            <a  class="btn btn-danger" href="">Delete</a>
+                                        </td>
+                                    </tr>
+                                </c:forEach>                           
+                            </tbody>
+                        </table>
+
+                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Registrar prestamo HV</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!-- FECHA PRESTAMO input-->
+                                <label>Fecha de prestamo:</label>
+                                <input class="form-control" id="fecha_pres" type="date" placeholder="FECHA NACIMIENTO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="date:required">FECHA DE PRESTAMO es requerido.</div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <!-- HOJA DE VIDA PPL input-->
+                                <label></label>
+                                <input class="form-control" id="pres_ppl" type="text" placeholder="Prestamo hv ppl*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="date:required">FECHA DE PRESTAMO es requerido.</div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4">   
+                            <div class="form-group">
+                                <!-- Funcionario prestamo input-->
+                                <label></label>
+                                <input class="form-control" id="pres_ppl" type="text" placeholder="Puncionario prestamo*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="date:required">FUNCIONARIO es requerido.</div>
+                                
+                            </div>
+                        </div>
+                        
+                                    <div class="form-group">
+                                        <!-- DESCRIPCIÓN input-->
+                                        <textarea class="form-control" id="descrip_pres" placeholder="Descripcion *" data-sb-validations="required"></textarea>
+                                        <div class="invalid-feedback" data-sb-feedback="Delit:required">DESCRIPCION es requerido.</div>
+                                    </div>
+                                
+                        
+
+                        <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                       Guardar
+                        </button>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                                <thead class="">
+                                    <tr class="text">
+                                        <th>ID</th>
+                                        <th>NUI</th>
+                                        <th>NTD</th>   
+                                        <th>NOMBRE</th>
+                                        <th>APELLIDO</th>
+                                        <th>DOCUMENTO</th>
+                                        <th>FECHA NACIMIENTO</th>
+                                        <th>GENERO</th>
+                                        <th>FECHA CAPTURA</th>
+                                        <th>DELITO</th>
+                                        <th>SITUACIÓN JURIDICA</th>
+                                        <th>UBICACION</th>
+                                        <th>REGISTRO REALIZADO</th>
+                                        <th>ULTIMA ACTUALIZACIÓN</th>
+                                 </tr>
+                                </thead>
+                            <tbody>
+                            
+                                <c:forEach var="prov" items="">
+                                    <tr class="text-center">
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        
+                                    </tr>
+                                </c:forEach>                           
+                            </tbody>
+                        </table>
+
+                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                    
+                   <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-dark table-hover">
+                            <thead class="">
+                                <tr class="text">
+                                    <th>ID</th>
+                                    <th>HV PPL</th>
+                                    <th>FUNCIONARIO</th>  
+                                    <th>DESCRIPCIÓN</th> 
+                                    <th>FECHA PRESTAMO</th>
+                                    <th>FECHA DEVOLUCIÓN</th>
+                                    <th>DEVOLUCIÓN DE HV</th>
+                                    
+                                </tr>
+                            </thead>
+                        <tbody>
+                            
+                            <c:forEach var="prov" items="">
+                                <tr class="text-center">
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td class="d-flex">
+                                        <a class="btn btn-warning" href="">Confirmar</a>
+                                        
+                                    </td>
+                                </tr>
+                            </c:forEach>                           
+                        </tbody>
+                    </table>
+
+                </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                                <thead class="">
+                                    <tr class="text">
+                                        <th>ID</th>
+                                        <th>HV PPL</th>
+                                        <th>FUNCIONARIO</th>  
+                                        <th>DESCRIPCIÓN</th> 
+                                        <th>FECHA PRESTAMO</th>
+                                        <th>FECHA DEVOLUCIÓN</th>
+                                        <th>REGISTRO REALIZADO</th>
+                                        <th>ULTIMA ACTUALIZACIÓN</th>
+                                 </tr>
+                                </thead>
+                            <tbody>
+                            
+                                <c:forEach var="prov" items="">
+                                    <tr class="text-center">
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        
+                                    </tr>
+                                </c:forEach>                           
+                            </tbody>
+                        </table>
+
+                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

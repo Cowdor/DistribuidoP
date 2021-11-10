@@ -25,14 +25,15 @@
                 <img src="{% static 'assets/images/logo.svg' %}" alt="logo" class="logo">
               </div>
               <p class="login-card-description">Bienvenido funcionario</p>
-              <form action="#!">
+              <form  method="POST">
+                {% csrf_token %}
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Numero de documento de identidad">
+                    <input type="email" name="usuario" id="email" class="form-control" placeholder="Numero de documento de identidad">
                   </div>
                   <div class="form-group mb-4">
                     <label for="password" class="sr-only">Password</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="***********">
+                    <input type="password" name="pass" id="password" class="form-control" placeholder="***********">
                   </div>
                   <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
                 </form>

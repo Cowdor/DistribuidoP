@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from mainApp import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib.auth.views import LoginView, LogoutView
 
 import mainApp
 
@@ -28,10 +29,12 @@ urlpatterns = [
     path('libertades/', views.libertades),
     path('72h/', views.A_72h),
     path('tutelas/', views.tutelas),
-    path('', views.index),
     path('asesor/', views.asesor),
     path('guardar_funci/', views.guardar_funci, name='guardar_funci'),
     path('guardar_area/', views.guardar_area, name='guardar_area'),
+    path('seccion/', views.seccion, name ='seccion'),
+    path('',LoginView.as_view(template_name='index.html'),name='login')
+    
 
     
 ]

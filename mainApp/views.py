@@ -1,4 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.core.checks import messages
+from django.shortcuts import redirect, render, HttpResponse
 from mainApp.models import Area, Funcionario
 
 # Create your views here.
@@ -49,3 +50,34 @@ def guardar_area(request):
 
     area.save()
     return HttpResponse(f'dato almacenado: {area.nombre_area}')
+
+def seccion(request):
+    if request.method == 'POST':
+        documento= request.POST['usuario']
+        password = request.POST['pass']
+        
+        funci_docu = Funcionario.documento_funci,
+        funci_pass = Funcionario.passw,
+        funci_area = Funcionario.id_area,
+
+        if (documento== funci_docu and password== funci_pass):
+            if (funci_area == 1):
+                return render(request, "vista_archivo.html")
+            elif(funci_area==2):
+                return render(request, "vista_72h.html")
+            elif(funci_area==3):
+                return render(request, "vista_liber.html")
+            elif(funci_area==4):
+                return render(request, "vista_reden.html")
+            elif(funci_area==5):
+                return render(request, "vista_tutelas.html")
+        else:
+            
+            return render(request, "index.html")
+    else:
+        return render(request, "index.html")
+    
+    return redirect('')
+
+
+        

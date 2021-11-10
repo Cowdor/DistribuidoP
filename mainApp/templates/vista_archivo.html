@@ -342,14 +342,14 @@
                                 </thead>
                             <tbody>
                             
-                                <c:forEach var="prov" items="">
+                                {%for ppl in ppls%}
                                     <tr class="text-center">
                                         <td>Prueba
                                         </td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>   
-                                        <td>Prueba</td>   
-                                        <td>Prueba</td>
+                                        <td>prueba</td>
+                                        <td>{{ppl.nombre}}</td>   
+                                        <td>{{ppl.apellido}}</td>   
+                                        <td>{{ppl.documento}}</td>
                                         <td>Prueba</td>
                                         <td>Prueba</td>
                                         <td>Prueba</td>
@@ -358,11 +358,12 @@
                                         <td>Prueba</td>
                                         <td>Prueba</td>
                                         <td class="d-flex">
+                                            <a  class="btn btn-info" href="">confirmar</a>
                                             <a  class="btn btn-warning" href="">Editar</a>
                                             <a  class="btn btn-danger" href="">Delete</a>
                                         </td>
                                     </tr>
-                                </c:forEach>                           
+                                {%endfor%}                          
                             </tbody>
                         </table>
 

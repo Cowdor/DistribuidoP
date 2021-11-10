@@ -1,10 +1,29 @@
 from django.core.checks import messages
 from django.shortcuts import redirect, render, HttpResponse
-from mainApp.models import Area, Funcionario
+from mainApp.models import PPL, Area, Funcionario
+
 
 # Create your views here.
 def archivo(request):
-    return render(request, "vista_archivo.html")
+    ppls = mostrarppls()
+
+
+
+
+
+    return render(request, "vista_archivo.html",{
+        
+        'ppls'       :ppls,
+        
+
+
+    })
+
+def mostrarppls():
+    ppls= PPL.objects.all()
+
+    return(ppls)
+
 
 def redenciones(request):
     return render(request, "vista_reden.html")

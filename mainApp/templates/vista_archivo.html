@@ -224,50 +224,52 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form action ='/guardar_ppl/' id="contactForm" data-sb-form-api-token="API_TOKEN" method="post">
+                        {% csrf_token %}
+                        
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <!-- NUI input-->
-                                <input class="form-control" id="nui" type="text" placeholder="NUI*" data-sb-validations="required" />
+                                <input class="form-control" name="nui" id="nui" type="text" placeholder="NUI*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="nui:required">NUI es requerido.</div>
                             </div>
 
                             <div class="form-group">
                                 <!-- NTD input-->
-                                <input class="form-control" id="ntd" type="text" placeholder="NTD*" data-sb-validations="required" />
+                                <input class="form-control" name="n_td" id="ntd" type="text" placeholder="NTD*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="ntd:required">NTD es requerido.</div>
                             </div>
                             <div class="form-group">
                                 <!-- DOCUMENTO input-->
-                                <input class="form-control" id="documentoppl" type="text" placeholder="DOCUMENTO*" data-sb-validations="required" />
+                                <input class="form-control" name="documento" id="documentoppl" type="text" placeholder="DOCUMENTO*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="document:required">DOCUMENTO es requerido.</div>
                             </div>
                             <div class="form-group">
                                 <!-- SITUACIÓN JURIDICA input-->
-                                <input class="form-control" id="situ_juridica" type="text" placeholder="SITUACION JURIDICA*" data-sb-validations="required" />
+                                <input class="form-control" name="situacion_juridica" id="situ_juridica" type="text" placeholder="SITUACION JURIDICA*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="situation:required">SITUACIÓN JURIDICA es requerido.</div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <!-- NOMBRE input-->
-                                <input class="form-control" id="nombreppl" type="text" placeholder="NOMBRE*" data-sb-validations="required" />
+                                <input class="form-control" name="nombre" id="nombreppl" type="text" placeholder="NOMBRE*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">NOMBRE es requerido.</div>
                             </div>
                             <div class="form-group">
                                 <!-- APELLIDO input-->
-                                <input class="form-control" id="aquellidoppl" type="text" placeholder="APELLIDO*" data-sb-validations="required" />
+                                <input class="form-control" name="apellido" id="aquellidoppl" type="text" placeholder="APELLIDO*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="lastname:required">APELLIDO es requerido.</div>
                             </div>
                             <div class="form-group">
                                 <!-- GENERO JURIDICA input-->
-                                <input class="form-control" id="generoppl" type="text" placeholder="GENERO*" data-sb-validations="required" />
+                                <input class="form-control" name="genero" id="generoppl" type="text" placeholder="GENERO*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="sex:required">GENERO es requerido.</div>
                             </div>
                             <div class="form-group">
                                 <!-- UBICACIÓN input-->
-                                <input class="form-control" id="ubicacionppl" type="text" placeholder="UBICACION*" data-sb-validations="required" />
+                                <input class="form-control" name="ubicacion" id="ubicacionppl" type="text" placeholder="UBICACION*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="ubicacition:required">UBICACION es requerido.</div>
                             </div>
                         </div>
@@ -275,24 +277,24 @@
                             <div class="form-group">
                                 <!-- FECHA NACIMIENTO input-->
                                 <label>Fecha de nacimineto:</label>
-                                <input class="form-control" id="fecha_nacippl" type="date" placeholder="FECHA NACIMIENTO*" data-sb-validations="required" />
+                                <input class="form-control" name="fecha_nacimiento" id="fecha_nacippl" type="date" placeholder="FECHA NACIMIENTO*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="date:required">FECHA DE NACIMIENTO es requerido.</div>
                             </div>
                             <label>Fecha de captura:</label>
                             <div class="form-group">
                                 <!-- FECHA CAPTURA input-->
-                                <input class="form-control" id="fecha_capppl" type="date" placeholder="FECHA CAPTURA*" data-sb-validations="required" />
+                                <input class="form-control"  name="fecha_captura" id="fecha_capppl" type="date" placeholder="FECHA CAPTURA*" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="date:required">FECHA DE CAPTURA es requerido.</div>
                             </div>
                                     <div class="form-group">
                                         <!-- DELITO input-->
-                                        <input class="form-control" id="delito" type="text" placeholder="DELITO *" data-sb-validations="required" />
+                                        <input class="form-control" name="delito" id="delito" type="text" placeholder="DELITO *" data-sb-validations="required" />
                                         <div class="invalid-feedback" data-sb-feedback="Delit:required">DELITO es requerido.</div>
                                     </div>
                                 
                         </div>
 
-                        <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="" type="button">
+                        <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="" type="submit">
                                         <i class="fas fa-times me-1"></i>
                                        Guardar
                         </button>
@@ -342,27 +344,28 @@
                                 </thead>
                             <tbody>
                             
-                                <c:forEach var="prov" items="">
+                                {%for ppl in ppls%}
                                     <tr class="text-center">
-                                        <td>Prueba
-                                        </td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>   
-                                        <td>Prueba</td>   
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>
-                                        <td>Prueba</td>
+                                        <td>{{ppl.id}}</td>
+                                        <td>{{ppl.nui}}</td>
+                                        <td>{{ppl.n_td}}</td>   
+                                        <td>{{ppl.nombre}}</td>   
+                                        <td>{{ppl.apellido}}</td>
+                                        <td>{{ppl.documento}}</td>
+                                        <td>{{ppl.fecha_nacimiento}}</td>
+                                        <td>{{ppl.genero}}</td>
+                                        <td>{{ppl.fecha_captura}}</td>
+                                        <td>{{ppl.delito}}</td>
+                                        <td>{{ppl.situacion_juridica}}</td>
+                                        <td>{{ppl.ubicacion}}</td>
+                                        
                                         <td class="d-flex">
+                                            <a  class="btn btn-info" href="">confirmar</a>
                                             <a  class="btn btn-warning" href="">Editar</a>
                                             <a  class="btn btn-danger" href="">Delete</a>
                                         </td>
                                     </tr>
-                                </c:forEach>                           
+                                {%endfor%}                          
                             </tbody>
                         </table>
 

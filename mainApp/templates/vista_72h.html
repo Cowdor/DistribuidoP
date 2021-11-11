@@ -188,7 +188,8 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form action='/registrar_72h/' id="contactForm" data-sb-form-api-token="API_TOKEN" method='post'>
+                    {% csrf_token %}
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-4">
                             <div class="form-group">

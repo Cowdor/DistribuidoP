@@ -24,12 +24,14 @@ import mainApp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('archivo/', views.archivo),
+    path('archivo/', views.archivo, name='archivo'),
     path('redenciones/', views.redenciones),
     path('libertades/', views.libertades),
     path('72h/', views.A_72h),
     path('tutelas/', views.tutelas),
     path('asesor/', views.asesor),
+    path('prueba/', views.prueba,name='prueba'),
+    path('guardar_ppl/', views.guardar_ppl, name='guardar-ppl'),
     path('guardar_funci/', views.guardar_funci, name='guardar_funci'),
     path('guardar_area/', views.guardar_area, name='guardar_area'),
     path('seccion/', views.seccion, name ='seccion'),

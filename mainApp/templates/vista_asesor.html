@@ -77,64 +77,79 @@
                     <h2 class="section-heading text-uppercase"> PANEL PRINCIPAL</h2>
                     <h3 class="section-subheading text-muted">Bitacoras.</h3>
                 </div>
+
+
                 <div class="row text-center">
                     <div class="col-md-4">
+                    <a class="col-md-4" data-bs-toggle="modal" href="#portfolioModal1">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-key fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                         <h4 class="my-3">72 HORAS</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">Lorem.</p>
                     </div>
+
                     <div class="col-md-4">
+                    <a class="col-md-4" data-bs-toggle="modal" href="#portfolioModal2">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                         <h4 class="my-3">ARCHIVO</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">Lorem .</p>
                     </div>
                     <div class="col-md-4">
+                    <a class="col-md-4" data-bs-toggle="modal" href="#portfolioModal3">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-infinity fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                         <h4 class="my-3">REDENSIONES</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">Lorem .</p>
                     </div>
 
                     <div class="col-md-4">
+                    <a class="col-md-4" data-bs-toggle="modal" href="#portfolioModal4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-suitcase fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                         <h4 class="my-3">Libertades</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">Lorem .</p>
                     </div>
 
 
                      <div class="col-md-4">
+                     <a class="col-md-4" data-bs-toggle="modal" href="#portfolioModal5">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                         <h4 class="my-3">Tutela</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">Lorem .</p>
                     </div>
 
 
 
 
                     <div class="col-md-4">
-                    <a class="col-md-4" data-bs-toggle="modal" href="#portfolioModal7">
+                    <a class="col-md-4" data-bs-toggle="modal" href="#portfolioModal6">
                             <span class="fa-stack fa-4x">
                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
                                <i class="fas fa-user fa-stack-1x fa-inverse"></i>
                             </span>
                     </a>
                         <h4 class="my-3"> + Funcionario </h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">Registrar funcionario.</p>
                     </div>
+
+                    
 
 
 
@@ -160,59 +175,447 @@
                 </div>
             </div>
         </footer>
-        
+         
 
+          <!-- Modal 72h-->
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                      <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                    
+                    <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                            <thead class="">
+                                <tr class="text">
+                                    <th>ID</th>
+                                    <th>NUI</th>
+                                    <th>NTD</th>   
+                                    <th>NOMBRE</th>
+                                    <th>APELLIDO</th>
+                                    <th>FECHA PETICIÓN</th>
+                                    <th>FASE</th>
+                                    <th>VISITA DOMICILIARIA</th>
+                                    <th>ANTECEDENTES</th>
+                                    <th>FECHA JUZGADO</th>
+                                    <th>FUNCIONARIO</th>
+                                    <th>OBSERVACIONES</th>
+                                    <th>REGISTRO REALIZADO</th>
+                                    <th>ULTIMA ACTUALIZACIÓN</th>
+                                    
+                                </tr>
+                            </thead>
+                        <tbody>
+                            
+                            <c:forEach var="prov" items="">
+                                <tr class="text-center">
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    
+                                    
+                                    
+                                </tr>
+                            </c:forEach>                           
+                        </tbody>
+                    </table>
 
+                </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Funcionario item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                                <thead class="">
+                                    <tr class="text">
+                                        <th>ID</th>
+                                        <th>NUI</th>
+                                        <th>NTD</th>   
+                                        <th>NOMBRE</th>
+                                        <th>APELLIDO</th>
+                                        <th>DOCUMENTO</th>
+                                        <th>FECHA NACIMIENTO</th>
+                                        <th>GENERO</th>
+                                        <th>FECHA CAPTURA</th>
+                                        <th>DELITO</th>
+                                        <th>SITUACIÓN JURIDICA</th>
+                                        <th>UBICACION</th>
+                                        <th>REGISTRO REALIZADO</th>
+                                        <th>ULTIMA ACTUALIZACIÓN</th>
+                                 </tr>
+                                </thead>
+                            <tbody>
+                            
+                                <c:forEach var="prov" items="">
+                                    <tr class="text-center">
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        
+                                    </tr>
+                                </c:forEach>                           
+                            </tbody>
+                        </table>
+
+                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                                <thead class="">
+                                    <tr class="text">
+                                        <th>ID</th>
+                                        <th>HV PPL</th>
+                                        <th>FUNCIONARIO</th>  
+                                        <th>DESCRIPCIÓN</th> 
+                                        <th>FECHA PRESTAMO</th>
+                                        <th>FECHA DEVOLUCIÓN</th>
+                                        <th>REGISTRO REALIZADO</th>
+                                        <th>ULTIMA ACTUALIZACIÓN</th>
+                                 </tr>
+                                </thead>
+                            <tbody>
+                            
+                                <c:forEach var="prov" items="">
+                                    <tr class="text-center">
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>   
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        <td>Prueba</td>
+                                        
+                                    </tr>
+                                </c:forEach>                           
+                            </tbody>
+                        </table>
+
+                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+ 
+<!-- Modal Redenciones-->
+
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                    
+                   <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                            <thead class="">
+                                <tr class="text">
+                                    <th>ID</th>
+                                    <th>NUI</th>
+                                    <th>NTD</th>   
+                                    <th>NOMBRE</th>
+                                    <th>APELLIDO</th>
+                                    <th>FECHA PETICIÓN</th>
+                                    <th>FECHA JUZGADO</th>
+                                    <th>FUNCIONARIO</th>
+                                    <th>OBSERVACIONES</th>
+                                    <th>REGISTRO REALIZADO</th>
+                                    <th>ULTIMA ACTUALIZACIÓN</th>
+                                    
+                                </tr>
+                            </thead>
+                        <tbody>
+                            
+                            <c:forEach var="prov" items="">
+                                <tr class="text-center">
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>              
+                                </tr>
+                            </c:forEach>                           
+                        </tbody>
+                    </table>
+                </div>             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    <!-- Modal Libertades-->
+       <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                    
+                   <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                            <thead class="">
+                                <tr class="text">
+                                    <th>ID</th>
+                                    <th>NUI</th>
+                                    <th>NTD</th>   
+                                    <th>NOMBRE</th>
+                                    <th>APELLIDO</th>
+                                    <th>UBICACIÓN</th>
+                                    <th>FECHA PETICIÓN</th>
+                                    <th>FECHA JUZGADO</th>
+                                    <th>NO.OFICIO</th>
+                                    <th>FUNCIONARIO</th>
+                                    <th>OBSERVACIONES</th>
+                                    <th>REGISTRO REALIZADO</th>
+                                    <th>ULTIMA ACTUALIZACIÓN</th>                         
+                                </tr>
+                            </thead>
+                        <tbody>                     
+                            <c:forEach var="prov" items="">
+                                <tr class="text-center">
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>                                
+                                </tr>
+                            </c:forEach>                           
+                        </tbody>
+                    </table>
+                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Modal Tutelas-->
+
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-20">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                    
+                   <div class="col-ms-8" style="overflow: auto">
+                        <table class="table table-bordered">
+                            <thead class="">
+                                <tr class="text">
+                                    <th>ID</th>
+                                    <th>NUI</th>
+                                    <th>NTD</th>   
+                                    <th>NOMBRE</th>
+                                    <th>APELLIDO</th>
+                                    <th>FECHA</th>
+                                    <th>RADICADO</th>
+                                    <th>ASUNTO</th>
+                                    <th>OFICIO ENVIADO</th>
+                                    <th>DESACATO</th>
+                                    <th>REGISTRO REALIZADO</th>
+                                    <th>ULTIMA ACTUALIZACIÓN</th>
+                                </tr>
+                            </thead>
+                        <tbody>                          
+                            <c:forEach var="prov" items="">
+                                <tr class="text-center">
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>   
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>
+                                    <td>Prueba</td>           
+                                </tr>
+                            </c:forEach>                           
+                        </tbody>
+                    </table>
+                </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+       <!-- Registro de Funcionario-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-
-
-
                                     <!-- Project details-->
-                                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Registrar Funcionario</h2>
+                    <h3 class="section-subheading text-muted">Verificar la información antes de registrar</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form action ='/guardar_ppl/' id="contactForm" data-sb-form-api-token="API_TOKEN" method="post">
+                        {% csrf_token %}
+                        
                     <div class="row align-items-stretch mb-5">
-                        <div class="col-md-4">
+
+                    <div class="col-md-4">
                             <div class="form-group">
-                                <label>Nombre</label>
-                                <!-- NUI PPL input-->
-                                <input class="form-control" id="nui_liber" type="text" placeholder="NUI PPL*" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="text:required">NUI DEL PPL es requerido.</div>
-                                
+                                <!-- NOMBRE input-->
+                                <input class="form-control" name="nombrefunc" id="nombrefunc" type="text" placeholder="NOMBRE*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">NOMBRE es requerido.</div>
                             </div>
-                             <div class="form-group">
-                                <label>Apellido</label>
-                                <!--  No. OFICIO input-->
-                                <input class="form-control" id="numofi" type="text" placeholder="No.OFICIO*" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="text:required">EL NUMERO DE OFICIO es requerido.</div>
-                                
+
+                            <div class="form-group">
+                                <!-- APELLIDO input-->
+                                <input class="form-control" name="apellidofunc" id="aquellidofunc" type="text" placeholder="APELLIDO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="lastname:required">APELLIDO es requerido.</div>
                             </div>
                         </div>
+
+
                         <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Fecha de nacimiento:</label>
-                                <!-- FECHA DERECHO DE PETICIÓN PPL input-->
-                                <input class="form-control" id="fechadp_reden" type="date" placeholder="Fecha derecho peticion*" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="date:required">FECHA DE NACIMIENTO.</div>
-                                
+                        <div class="form-group">
+                                <!-- GENERO input-->
+                                <input class="form-control" name="generofunc" id="generofunc" type="text" placeholder="GENERO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="sex:required">GENERO es requerido.</div>
                             </div>
-                            <div class="form-group ">
-                                        <!-- Onservaciones input-->
-                                        <textarea class="form-control" id="descrip_pres" placeholder="Observaciones *" data-sb-validations="required"></textarea>
-                                        <div class="invalid-feedback" data-sb-feedback="Delit:required">Observaciones requerido.</div>
-                                    </div>
+
+                             <div class="form-group">
+                                <!-- CARGO input-->
+                                <input class="form-control" name="cargo" id="cargo" type="text" placeholder="CARGO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="cargo:required">Cargo es requerido.</div>
+                            </div>
+                           
                         </div>
                         
-                                    
-                                
-                        <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="" type="button">
+                        <div class="col-md-4">
+                             <div class="form-group">
+                                <!-- DOCUMENTO input-->
+                                <input class="form-control" name="documentofunc" id="documentofunc" type="text" placeholder="DOCUMENTO*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="document:required">DOCUMENTO es requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- CLAVE input-->
+                                <input class="form-control" name="clave" id="clave" type="text" placeholder="CLAVE*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="clave:required">CLAVE es requerido.</div>
+                            </div>
+                            </div>
+
+                        <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="" type="submit">
                                         <i class="fas fa-times me-1"></i>
                                        Guardar
                         </button>
@@ -220,10 +623,9 @@
                     </div>
                     
                 </form>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-times me-1"></i>
-                                        Close Project
-                                    </button>
+            </div>
+        </section>
+                                    
                                 </div>
                             </div>
                         </div>
